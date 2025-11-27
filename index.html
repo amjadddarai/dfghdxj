@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH Sweet Bakes - Cozy Bakery in Casablanca</title>
+    <meta name="description" content="Delicious cakes, pastries, and custom bakes from NH Sweet Bakes in Casablanca. Order online or visit us!">
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">NH Sweet Bakes</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#custom">Custom Orders</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to NH Sweet Bakes</h1>
+            <p>Indulge in our handcrafted cakes, pastries, and breads – made with love in Casablanca.</p>
+            <a href="#menu" class="btn">See Menu</a>
+        </div>
+    </section>
+
+    <section id="specials" class="specials">
+        <div class="container">
+            <h2>Seasonal Specials</h2>
+            <div class="specials-grid">
+                <div class="special-item">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Holiday Pumpkin Cake" style="width:100%; border-radius:10px;">
+                    <h3>Holiday Pumpkin Cake</h3>
+                    <p>Limited-time spiced pumpkin delight. $25</p>
+                </div>
+                <div class="special-item">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Valentine's Heart Cake" style="width:100%; border-radius:10px;">
+                    <h3>Valentine's Heart Cake</h3>
+                    <p>Romantic red velvet for your special day. $30</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich, moist chocolate layers with creamy frosting.</p>
+                    <div class="price">$20</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Croissants">
+                    <h3>Butter Croissants</h3>
+                    <p>Flaky, golden pastries perfect for breakfast.</p>
+                    <div class="price">$5 each</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sourdough Bread">
+                    <h3>Sourdough Bread</h3>
+                    <p>Artisanal loaf with a tangy crust.</p>
+                    <div class="price">$10</div>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="custom">
+        <div class="container">
+            <h2>Custom Cakes & Special Orders</h2>
+            <p>Let us create something special for your celebrations! From birthdays to weddings, we customize cakes with your flavors, designs, and themes.</p>
+            <p>How to order: Contact us via the form below or WhatsApp at +212-XXX-XXXX. Provide details like size, flavors, and any decorations.</p>
+            <form id="custom-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Describe your custom order (e.g., flavors, size, occasion)" required></textarea>
+                <button type="submit">Submit Order Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cake Showcase"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Baking Process"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pastries"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Behind-the-Scenes"></div>
+                <!-- Add more gallery images -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About NH Sweet Bakes</h2>
+            <p>Founded in Casablanca, NH Sweet Bakes is a family-run bakery passionate about crafting delicious, high-quality baked goods. We believe in using fresh, local ingredients to create treats that bring joy to every bite. Whether it's a simple croissant or an elaborate wedding cake, our philosophy is simple: bake with love and share the sweetness.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Location: Casablanca, Morocco</p>
+            <p>Phone/WhatsApp: +212-XXX-XXXX</p>
+            <p>Follow us: <a href="https://www.instagram.com/nh_sweet_bakes/" target="_blank">@nh_sweet_bakes</a></p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message or Order Details" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Form submission (simulated)
+        document.getElementById('custom-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your custom order request has been submitted. We\'ll contact you soon.');
+        });
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent.');
+        });
+
+        // Simple gallery lightbox (optional enhancement)
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', function() {
+                // Basic lightbox: open in new tab for simplicity
+                window.open(this.src, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
